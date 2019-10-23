@@ -22,6 +22,6 @@ nombres = ["Luis", "Ángel", "José", "Ana"]
 # Salida:
 # 1: zip <- Se une las listas paraleloA, nombres como una sola lista mediante 'list'
 # 2: map <- Recibe funcion lambda e itera con los datos de la lista generada previamente
-# 3: Presente unicamente aquellos que sea menores a 5 en la posición 0dio bajo
+# 3: Presente unicamente aquellos que sea menores a 5 en la posición 0 o que tengan un promedio bajo
 print(list(filter(lambda x: x[0] < 5, map(lambda x: (sum(x[0])/3, sum(x[0]), x[1]), 
     list(zip(paraleloA, nombres))))))
